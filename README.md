@@ -82,6 +82,8 @@ pip install -r requirements.txt
 
 Create a `.env` file with your own Gemini API key:
 
+GEMINI_API_KEY=your_key_here
+
 
 
 Then run:
@@ -111,6 +113,4 @@ Notes
 \- Uses Google Gemini's free tier — large documents may take longer to process due to API rate limits (handled gracefully with batching).
 
 \- This is Module 1 of a larger project — an HR Intelligence Suite combining document Q\&A, attrition prediction, and BI reporting for SMEs.
-
-'@ | Set-Content -Path README.md -Encoding utf8
 
