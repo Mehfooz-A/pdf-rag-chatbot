@@ -34,13 +34,13 @@ Tech stack
 
 
 
-\- LangChain\*\* — orchestration (prompt templates, retrieval chains)
+\- LangChain — orchestration (prompt templates, retrieval chains)
 
-\- Google Gemini API\*\* — LLM (`gemini-3.6-flash`) + embeddings (`gemini-embedding-001`)
+\- Google Gemini API — LLM (`gemini-3.6-flash`) + embeddings (`gemini-embedding-001`)
 
-\- ChromaDB\*\* — vector store for semantic search
+\- ChromaDB — vector store for semantic search
 
-\- Streamlit\*\* — web interface, deployed on Streamlit Cloud
+\- Streamlit — web interface, deployed on Streamlit Cloud
 
 
 
