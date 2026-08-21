@@ -1,4 +1,4 @@
-\# Chat with your PDF — RAG Chatbot
+Chat with your PDF — RAG Chatbot
 
 
 
@@ -6,11 +6,15 @@ A Retrieval-Augmented Generation (RAG) chatbot that lets you upload any PDF and 
 
 
 
-\*\*\[Try it live →](https://pdf-rag-chatbot-dygeu2uxt3eppj7n9orr7o.streamlit.app/)\*\*
+
+
+\[Try it live →](https://pdf-rag-chatbot-dygeu2uxt3eppj7n9orr7o.streamlit.app/)
 
 
 
-\## What it does
+
+
+What it does
 
 
 
@@ -24,21 +28,25 @@ A Retrieval-Augmented Generation (RAG) chatbot that lets you upload any PDF and 
 
 
 
-\## Tech stack
+
+
+Tech stack
 
 
 
-\- \*\*LangChain\*\* — orchestration (prompt templates, retrieval chains)
+\- LangChain\*\* — orchestration (prompt templates, retrieval chains)
 
-\- \*\*Google Gemini API\*\* — LLM (`gemini-3.6-flash`) + embeddings (`gemini-embedding-001`)
+\- Google Gemini API\*\* — LLM (`gemini-3.6-flash`) + embeddings (`gemini-embedding-001`)
 
-\- \*\*ChromaDB\*\* — vector store for semantic search
+\- ChromaDB\*\* — vector store for semantic search
 
-\- \*\*Streamlit\*\* — web interface, deployed on Streamlit Cloud
+\- Streamlit\*\* — web interface, deployed on Streamlit Cloud
 
 
 
-\## How it works
+
+
+How it works
 
 
 
@@ -54,7 +62,9 @@ A Retrieval-Augmented Generation (RAG) chatbot that lets you upload any PDF and 
 
 
 
-\## Run it locally
+
+
+Run it locally
 
 
 
@@ -71,4 +81,36 @@ pip install -r requirements.txt
 
 
 Create a `.env` file with your own Gemini API key:
+
+
+
+Then run:
+
+```bash
+
+streamlit run app.py
+
+```
+
+
+
+Deep dive
+
+
+
+For a full explanation of the architecture, design decisions, and how RAG works under the hood, see \[ARCHITECTURE.md](./ARCHITECTURE.md).
+
+
+
+
+
+Notes
+
+
+
+\- Uses Google Gemini's free tier — large documents may take longer to process due to API rate limits (handled gracefully with batching).
+
+\- This is Module 1 of a larger project — an HR Intelligence Suite combining document Q\&A, attrition prediction, and BI reporting for SMEs.
+
+'@ | Set-Content -Path README.md -Encoding utf8
 
